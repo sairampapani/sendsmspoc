@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="sendSmsPage.jsf" id="d1">
+        <af:inputText label="Number" id="it1" value="#{pageFlowScope.SendSmsCodeFromBean.number}"/>
+        <af:inputText label="Message" id="it2" value="#{pageFlowScope.SendSmsCodeFromBean.message}"/>
+        <af:button text="send" id="b1" actionListener="#{pageFlowScope.SendSmsCodeFromBean.sendSmsCode}"/>
+        <af:form id="f1"></af:form>
+    </af:document>
+</f:view>
